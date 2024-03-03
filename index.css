@@ -1,0 +1,564 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.section1{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    position: fixed;
+    right: 0;
+    left: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    height: 42px;
+    margin: 7px 0;
+}
+.bulogo{
+    height: 50px;
+    width: 120px;
+    cursor: pointer;
+}
+ul{
+    padding: 20px;
+    font-family: "Poppins", sans-serif; ;
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+ul li a:hover{
+    color: #fac031;
+}
+.icons i{
+   font-size: 18px;
+   color: #000;
+   margin: 0 5px;
+   cursor: pointer;
+   transition: 0.3 ease;
+}
+.icons i:hover{
+    color: #fac031;
+}
+main{   
+    /* box-shadow: 0 1px rgba(0, 0, 0, 1.5); */
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 130px;
+    margin-left: 35px;
+}
+.mainText{
+    margin-top: 50px;
+    margin-left: 56px;
+    text-align: center;
+}
+section main .mainText h1{
+    font-family:"Rubik", sans-serif;
+    font-size: 60px;
+    position: relative;
+    top: -70px;
+    left: 20px;
+}
+section main .mainText h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: "Protest Riot", sans-serif;
+    font-size: 70px;
+    line-height: 22px;
+    font-size: 70px;
+    
+}
+.mainImg{
+    margin-right: 70px;
+    width: 700px;
+    left: 70px;
+    position: relative;
+}
+.btn{
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    background-color: #fac031;
+    padding: 11px 25px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 16px;
+    margin-left: 161px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 101px
+  
+ }
+ .btn a{
+     font-family:"Protest Riot", sans-serif; ;
+     text-decoration: none;
+     color: black;
+     font-size: 18px;
+     font-weight: bold;
+     padding: 2px;
+ }
+ #arow{
+    color: #000;
+    font-size: 19px;
+    font-weight: bold;
+ }
+ main .btn a i #arow:hover{
+    transform: translateX(7px);
+}
+/* div .btn{
+    height: 16px;
+  margin-left: 161px;
+  margin-top: -65px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 101px
+} */
+.section2{
+    width: 100%;
+    height: 100vh;
+}
+.about{
+    width: 99%;
+    height: 100vh;
+    align-items: center;
+}
+.about_main{
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.image img{
+    width: 600px;
+    position: relative;
+    text-align: center;
+    top: 60px;
+}
+.about_text{
+    margin: 20px;
+    width: 700px;
+}
+.about .about_main .about_text h1 span{
+    color: #fac031;
+    margin-right:15px ;
+    font-family: "Protest Riot", sans-serif; 
+    top: 3px;
+}
+.about .about_main .about_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 40px;
+}
+.about .about_main .about_text h3{
+    font-size: 30px;
+    margin: 0 0 50px 0;
+    font-family:"Rubik", sans-serif;
+}
+.about .about_main .about_text p{
+    bottom: 20px;
+    width: 650px;
+    text-align: justify;
+    height: 200px;
+    font-display:unset;
+    font-family: "Protest Riot", sans-serif;
+    font-size: large;
+}
+.btn2{
+    position: relative;
+   background-color: #fac031;
+   padding: 12px 25px;
+   text-decoration: none;
+   color: white;
+   position: relative;
+   width: 100px;
+   border-radius: 2px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.btn2 a{
+    font-family:"Protest Riot", sans-serif; ;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+  /* Menu */
+  /* .section3{
+    width: 100%;
+    height: 100vh;
+} */
+.menu{
+    width: 100%;
+    padding: 70px 0;
+}
+.menu h1{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.menu h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-family:"Protest Riot", sans-serif;
+}
+.menu h1 span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 6px;
+}
+.menu .menu_box{
+    width:95% ;                                     
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.menu .menu_box .menu_card{
+    width: 325px;
+    height:480px ;
+    padding-top: 10px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+.menu .menu_box .menu_card .menu_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu .menu_box .menu_card .menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.8s;
+}
+.menu .menu_box .menu_card .menu_image:hover img{
+    transform:scale(1.1) ;
+}
+.menu .menu_box .menu_card .small_card{
+    width: 45px ;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+} 
+.menu .menu_box .menu_card:hover .small_card{
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+}
+.menu .menu_box .menu_card .small_card i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color:white;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+.menu .menu_box .menu_card .small_card i:hover{
+    color: #fac031;
+}
+.menu .menu_box .menu_card .menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #fac031;
+}
+.menu .menu_box .menu_card .menu_info p{
+    text-align: center;
+    margin-top:8px ;
+    line-height:21px ;
+}
+.menu .menu_box .menu_card .menu_info h3{
+    text-align: center;
+    margin-top: 10px;
+}
+.menu .menu_box .menu_card .menu_info .menu_icon{
+    color:#fac031;
+    text-align: center;
+    margin:10px 0 20px 0;
+}
+.menu .menu_box .menu_card .menu_info .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+/* Review */
+.section4{
+    width: 100%;
+    height: 100vh;
+}
+.review h1 span{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.review{
+    width: 100%;
+    height: 100vh;
+    /* padding: 79px 0; */
+}
+.review h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.review h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-family:"Protest Riot", sans-serif;
+}
+.review h1 span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    position: relative;
+    bottom: 10px;
+    display: block;
+}
+.review .review_box{
+    width: 95%;
+    margin: 50px auto;
+    display: flex;
+}
+.review .review_box .review_card{
+    width: 350px;
+    height: 485px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 0 15px;
+}
+.review .review_box .review_card .review_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_profile
+{
+    transform:translateY(-20px);
+}
+.review .review_box .review_card .review_profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border:5px solid #cccc ;
+}
+.review .review_box .review_card .review_text{
+    text-align: center;
+}
+.review .review_box .review_card .review_text .name{
+    color: #000;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_text .name{
+    transform: translateY(-10px);
+}
+.review .review_box .review_card .review_text .review_icon{
+    color: #fac031;
+    transition: 0.3s;   
+}
+.review .review_box .review_card :hover .review_text .review_icon{
+    transform: translateY(-20px);
+}
+.review .review_box .review_card .review_text .review_social i{
+    margin: 5px 1px;
+    font-size: 15px;
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_text .review_social i{
+    opacity: 1;
+    transform: translateY(-4px);
+}
+.review .review_box .review_card .review_text p{
+    text-align: center;
+    line-height:22px ;
+    transition: 0.3s;
+}
+.review .review_box .review_card:hover .review_text p{
+    margin-top:5px ;
+}
+/* order */
+.order{
+    width: 100%;
+    height: 100vh;
+}
+.order h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 55px;
+}
+.order h1 span{
+    color: #fac031;
+    margin-right: 15px;
+    font-family: "Protest Riot", sans-serif;
+}
+.order h1 span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    position: relative;
+    bottom: 10px;
+}
+.order .order_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.order .order_main.order_image img{
+    width: 600px;
+
+}
+ .for{                                     
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 0px 10px;
+}
+.order .order_main form .input p{
+    line-height: 25px;
+}
+.order .order_main form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #ccc;
+    background: #eeee;
+    outline: none;
+    border-radius: 3px;
+
+}
+.order .order_main form .input input:focus{
+    border: 2px solid #fac031;
+}
+.order .order_main form .order_btn{
+    padding: 10px 0;
+    background: #fac031;
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+/* Footer */
+footer{
+    width: 98%;
+    padding: 30px 0 0 20px;
+    background: #eeee;
+}
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+footer .footer_main .footer_tag{
+    text-align: center;
+
+}
+footer .footer_main .footer_tag h2{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family:"Rubik", sans-serif; ;
+}
+footer .footer_main .footer_tag p{
+    font-family: "Protest Riot", sans-serif;;
+    margin:10px 0;
+}
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+} 
+footer .footer_main .footer_tag i:hover{
+    color: #fac031;
+}
+::-webkit-scrollbar{
+    width: 13px ;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb{
+    background: #fac031;
+    border-radius: 10px;
+}
+
+
+
+
